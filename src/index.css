@@ -61,11 +61,11 @@ body {
   font-family: var(--font-mono);
 }
 
-/* Brand logotype — bold script, Coca-Cola-style confidence, used only for the wordmark */
+/* Brand logotype, flowing Spencerian-style script, Coca-Cola-style confidence, used only for the wordmark */
 .font-brand {
-  font-family: "Yellowtail", cursive;
+  font-family: "Beau Rivage", cursive;
   font-weight: 400;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.02em;
 }
 
 /* Apple typography: negative tracking as size grows, tight leading on display */

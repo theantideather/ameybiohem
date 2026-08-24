@@ -39,7 +39,7 @@ export default function Nav() {
           <Logo size={32} />
           <span className="leading-none">
             <span className="block text-[17px] font-semibold tracking-tight text-cream">Greenaid</span>
-            <span className="font-brand block text-[19px] leading-none text-gold -mt-0.5">AmeyBioChem</span>
+            <span className="font-brand block text-[26px] leading-none text-gold -mt-1">AmeyBioChem</span>
           </span>
         </Link>
 

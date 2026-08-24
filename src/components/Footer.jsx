@@ -42,7 +42,7 @@ export default function Footer() {
               <Logo size={32} />
               <span className="leading-none">
                 <span className="block text-[15px] font-semibold text-cream">Greenaid</span>
-                <span className="font-brand block text-[20px] leading-none text-gold -mt-0.5">AmeyBioChem</span>
+                <span className="font-brand block text-[27px] leading-none text-gold -mt-1">AmeyBioChem</span>
               </span>
             </div>
             <p className="mt-5 text-mist text-sm leading-relaxed max-w-xs">

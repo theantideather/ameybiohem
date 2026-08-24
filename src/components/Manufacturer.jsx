@@ -15,8 +15,8 @@ export default function Manufacturer() {
               different labels. Made in one place.
             </h2>
             <p className="mt-5 text-mist text-lg leading-relaxed">
-              Greenaid Alpha &amp; Beta are formulated and manufactured exclusively by AmeyBioChem, under
-              CEO Jayant Gurram. Across our active regions, super stockists carry this same system and
+              Greenaid Alpha &amp; Beta are formulated and manufactured by AmeyBioChem, under CEO Mr.
+              Jayant Gurram. Across our active regions, super stockists carry this same system and
               resell it under their own trade names to factories in their territory, the drum in front of
               your machine may not say "Greenaid" on it at all.
             </p>

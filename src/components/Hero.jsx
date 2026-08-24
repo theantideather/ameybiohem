@@ -100,10 +100,18 @@ export default function Hero() {
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="inline-flex items-center gap-2 font-sans font-bold text-[12px] uppercase tracking-[0.22em] text-lime border border-lime/25 bg-lime/[0.08] rounded-full px-4 py-1.5 mb-8"
+          className="inline-flex flex-wrap items-center gap-x-1.5 gap-y-0.5 border border-lime/25 bg-lime/[0.08] rounded-2xl px-3.5 sm:px-4 py-1.5 mb-8 max-w-full"
         >
-          <span className="w-1.5 h-1.5 rounded-full bg-lime animate-pulse-dot" />
-          By AmeyBioChem · Manufacturer of Greenaid Alpha &amp; Beta
+          <span className="w-1.5 h-1.5 rounded-full bg-lime animate-pulse-dot shrink-0" />
+          <span className="font-sans font-bold text-[8px] sm:text-[11px] uppercase tracking-[0.12em] sm:tracking-[0.2em] text-lime whitespace-nowrap">
+            CEO Mr. Jayant Gurram&rsquo;s
+          </span>
+          <span className="font-brand text-[16px] sm:text-[19px] leading-none text-gold whitespace-nowrap -mb-0.5">
+            AmeyBioChem
+          </span>
+          <span className="font-sans font-bold text-[8px] sm:text-[11px] uppercase tracking-[0.12em] sm:tracking-[0.2em] text-lime whitespace-nowrap">
+            · Manufacturer of Greenaid Alpha &amp; Beta
+          </span>
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-16 items-end">

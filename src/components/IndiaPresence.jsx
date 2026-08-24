@@ -5,7 +5,7 @@ import Reveal from './Reveal'
 import { INDIA_PATH, INDIA_VIEWBOX } from '../data/indiaPath'
 import Eyebrow from './Eyebrow'
 
-// Real projected positions (equirectangular, cos-latitude corrected) —
+// Real projected positions (equirectangular, cos-latitude corrected) -
 // matches the INDIA_PATH projection exactly, not eyeballed. Featured cities
 // (HQ + primary trial sites) lead the cycle and render as larger markers.
 const CITIES = [
@@ -63,7 +63,7 @@ export default function IndiaPresence() {
             India's reactive-dyeing belt.
           </h2>
           <p className="mt-5 text-mist text-lg leading-relaxed">
-            From Punjab's processing houses to Tamil Nadu's knitwear cluster — Greenaid is already
+            From Punjab's processing houses to Tamil Nadu's knitwear cluster, Greenaid is already
             running in the districts that do the most reactive dyeing in the country.
           </p>
         </Reveal>
@@ -107,7 +107,7 @@ export default function IndiaPresence() {
             })}
           </svg>
 
-          {/* HTML label layer — positioned from the same projected coordinates,
+          {/* HTML label layer, positioned from the same projected coordinates,
               so the pop-in card gets real typography instead of raw SVG <text>. */}
           <div className="absolute inset-0 pointer-events-none">
             <AnimatePresence>
@@ -157,7 +157,7 @@ export default function IndiaPresence() {
           <div className="text-center mb-6">
             <span className="font-sans font-bold text-[12px] uppercase tracking-[0.16em] text-gold">Case Studies by Location</span>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
             {[
               { slug: 'case-study-solapur', place: 'Solapur', label: 'Home ground · HQ', tag: 'Towelling & terry' },
               { slug: 'case-study-bhilwara', place: 'Bhilwara, Rajasthan', label: 'Spinning & weaving mill', tag: 'Hard-water trial' },

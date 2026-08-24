@@ -13,7 +13,7 @@ function HeroBadge() {
       className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/15 backdrop-blur-md border border-white/20 mx-auto mb-5 w-fit"
     >
       <Sparkles className="w-4 h-4 text-gold" />
-      <span className="text-[14px] font-medium text-cream">Trial Batches Open — Book Yours</span>
+      <span className="text-[14px] font-medium text-cream">Trial Batches Open, Book Yours</span>
     </motion.div>
   )
 }
@@ -57,7 +57,7 @@ function BottomRightCorner() {
       transition={{ duration: 0.8, delay: 0.4 }}
       className="absolute bottom-0 right-0 p-4 pt-6 pl-8 sm:p-5 sm:pt-7 sm:pl-10 md:p-6 md:pt-8 md:pl-12 bg-ink/85 backdrop-blur-xl rounded-tl-[1.75rem] sm:rounded-tl-[2.25rem] flex items-center gap-3 sm:gap-4"
     >
-      {/* Concave corner masks — make the glass panel read as cut into the
+      {/* Concave corner masks, make the glass panel read as cut into the
           rounded container corner, rather than just a rectangle stacked on top. */}
       <div className="absolute -top-[1.75rem] sm:-top-[2.25rem] right-0 w-[1.75rem] sm:w-[2.25rem] h-[1.75rem] sm:h-[2.25rem] pointer-events-none">
         <svg width="100%" height="100%" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -75,7 +75,7 @@ function BottomRightCorner() {
           Technical Dossier
         </Link>
         <Link
-          to="/#impact"
+          to="/impact"
           className="mt-1 flex items-center gap-1 text-mist hover:text-cream transition-colors cursor-pointer"
         >
           <span className="text-[11px] md:text-[13px] font-medium">See the data</span>
@@ -119,7 +119,7 @@ export default function GlassHero() {
               transition={{ duration: 0.8, delay: 0.3 }}
               className="text-sm sm:text-base md:text-lg text-cream/80 leading-relaxed max-w-xl font-medium"
             >
-              Book a side-by-side trial batch — your fabric, your machine, your recipe against ours.
+              Book a side-by-side trial batch, your fabric, your machine, your recipe against ours.
               No commitment until you see the numbers yourself.
             </motion.p>
           </div>

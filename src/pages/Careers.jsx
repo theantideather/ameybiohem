@@ -4,7 +4,7 @@ import fabricsGreen from '../assets/photos/fabrics-green.jpg'
 
 const ROLES = [
   {
-    title: 'Application Technician — Reactive Dyeing',
+    title: 'Application Technician, Reactive Dyeing',
     type: 'Full-Time · Field-Based',
     locations: 'Tiruppur, Surat, Ichalkaranji, Ludhiana, Erode/Coimbatore',
     summary:
@@ -18,7 +18,7 @@ const ROLES = [
     ],
     requirements: [
       'B.Sc / B.Tech in Textile Chemistry, Applied Chemistry or Dyeing & Printing',
-      '1–4 years on the floor in exhaust reactive dyeing — jet, soft-flow or winch machines',
+      '1–4 years on the floor in exhaust reactive dyeing, jet, soft-flow or winch machines',
       'Comfortable reading a dyehouse recipe and adjusting on the spot',
       'Willing to travel within your assigned cluster; own two-wheeler preferred',
     ],
@@ -28,7 +28,7 @@ const ROLES = [
     type: 'Full-Time · Field-Intensive',
     locations: 'Pan-India · Multiple Openings',
     summary:
-      'You pitch Greenaid to dyehouse owners and production managers — with the numbers, not just the pitch — and set up the trial batches that close the deal.',
+      'You pitch Greenaid to dyehouse owners and production managers, with the numbers, not just the pitch, and set up the trial batches that close the deal.',
     duties: [
       'Build and work a territory of textile dyehouses and processing units',
       'Present cost, water, energy and throughput savings with real batch data',
@@ -38,7 +38,7 @@ const ROLES = [
     requirements: [
       'B.Sc / B.Tech in Textile Chemistry, Applied Chemistry or Chemical Engineering',
       '2–6 years in textile chemical sales or technical service',
-      'Working knowledge of reactive exhaust dyeing — electrolyte, alkali, machine types',
+      'Working knowledge of reactive exhaust dyeing, electrolyte, alkali, machine types',
       'Hunger to build a territory from the ground up',
     ],
   },
@@ -59,7 +59,7 @@ export default function Careers() {
               every dyehouse in India.
             </h1>
             <p className="mt-5 text-mist text-lg leading-relaxed max-w-xl">
-              AmeyBioChem is building out its field team — technicians who can run a trial batch on the
+              AmeyBioChem is building out its field team, technicians who can run a trial batch on the
               floor, and sales executives who can walk a factory owner through what it saves. Full training
               provided on Greenaid Alpha &amp; Beta chemistry, protocol and objection handling.
             </p>
@@ -111,7 +111,7 @@ export default function Careers() {
               <div className="mt-8 pt-6 border-t border-white/10 flex flex-wrap items-center justify-between gap-4">
                 <p className="text-sm text-mist">Compensation: competitive, discussed post-interview · Travel covered</p>
                 <a
-                  href={`mailto:ameychemtech@gmail.com?subject=Application — ${encodeURIComponent(role.title)} — [Your City]`}
+                  href={`mailto:ameychemtech@gmail.com?subject=Application, ${encodeURIComponent(role.title)}, [Your City]`}
                   className="inline-flex items-center gap-2 bg-lime text-black font-semibold rounded-full px-6 py-3 hover:bg-lime-2 transition-colors text-sm"
                 >
                   Apply Now →
@@ -122,7 +122,7 @@ export default function Careers() {
         </div>
 
         <Reveal delay={0.2} className="mt-12 text-center text-sm text-mist">
-          Send your CV with subject "Application — [Role] — [Your City]" to{' '}
+          Send your CV with subject "Application, [Role], [Your City]" to{' '}
           <a href="mailto:ameychemtech@gmail.com" className="text-lime hover:underline">ameychemtech@gmail.com</a>
         </Reveal>
       </div>

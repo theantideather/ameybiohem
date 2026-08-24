@@ -19,6 +19,7 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <Press />
       <ImpactDashboard />
       <ResultsChart />
       <SavingsCalculator />
@@ -32,7 +33,6 @@ export default function Home() {
       <GlobalReach />
       <Stats />
       <BlogTeaser />
-      <Press />
       <MouseTrailCTA />
     </>
   )

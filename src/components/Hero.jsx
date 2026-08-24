@@ -38,7 +38,7 @@ const STAT_CHIPS = [
   { value: '+25%', label: 'More Output' },
 ]
 
-// Critically damped (no overshoot) — Apple's default for value repositioning.
+// Critically damped (no overshoot), Apple's default for value repositioning.
 const GAUGE_SPRING = { type: 'spring', bounce: 0, duration: 0.45 }
 const PILL_SPRING = { type: 'spring', bounce: 0, duration: 0.35 }
 const TAP = { scale: 0.96 }
@@ -106,7 +106,7 @@ export default function Hero() {
           By AmeyBioChem · Manufacturer of Greenaid Alpha &amp; Beta
         </motion.div>
 
-        <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-16 items-end">
+        <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-16 items-end">
           <div>
             <motion.h1
               initial={{ opacity: 0, y: 24 }}
@@ -124,7 +124,7 @@ export default function Hero() {
               transition={{ duration: 0.8, delay: 0.25, ease: [0.16, 1, 0.3, 1] }}
               className="mt-7 max-w-xl text-lg text-mist leading-relaxed"
             >
-              Add Greenaid Alpha to the dyebath and Greenaid Beta after dyeing — that's the whole change.
+              Add Greenaid Alpha to the dyebath and Greenaid Beta after dyeing, that's the whole change.
               Salt and soda ash drop 40–60%, water and energy drop by a quarter, and your shade comes out
               deeper and more consistent. No new machinery, no new training, no restricted chemistry.
             </motion.p>
@@ -257,7 +257,7 @@ export default function Hero() {
         >
           <span className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-lime" /> Tested to ISO 105 &amp; AATCC</span>
           <span className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-lime" /> Zero APEO / NPE</span>
-          <span className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-lime" /> Compliant — International Textile Standards</span>
+          <span className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-lime" /> Compliant, International Textile Standards</span>
           <span className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-lime" /> Made in India by AmeyBioChem</span>
         </motion.div>
       </div>

@@ -9,7 +9,7 @@ const CARDS = [
     role: 'Dyebath Conditioner',
     dose: '1.0–1.5% owf · added at dyebath start',
     desc:
-      'A single dosage at the start of the dyebath that lets you drop salt and soda ash 40–60% while reducing the wetting, chelating, leveling and anti-foaming agents you’d normally dose separately — by roughly half.',
+      'A single dosage at the start of the dyebath that lets you drop salt and soda ash 40–60% while reducing the wetting, chelating, leveling and anti-foaming agents you’d normally dose separately, by roughly half.',
     points: ['Salt reduced 40–60%', 'Soda ash reduced 40–60%', 'Wetting / chelating / leveling / anti-foam ↓ ~50%'],
     spec: [
       ['Appearance', 'Clear to pale straw liquid'],
@@ -25,7 +25,7 @@ const CARDS = [
     role: 'Fastness Enhancer',
     dose: '1.0–1.5% owf · applied post-dyeing',
     desc:
-      'Applied after dyeing, Beta lets every after-treatment auxiliary — fixative, soaping agent, acetic acid, softener — run at half its normal dosage, while lifting wash and rub fastness by up to a full ISO 105 grade.',
+      'Applied after dyeing, Beta lets every after-treatment auxiliary, fixative, soaping agent, acetic acid, softener, run at half its normal dosage, while lifting wash and rub fastness by up to a full ISO 105 grade.',
     points: ['After-treatment auxiliaries ↓ ~50%', 'Wash / rub fastness +0.5–1.0 grade', 'Shade depth (K/S) +20%'],
     spec: [
       ['Appearance', 'Clear to pale yellow liquid'],
@@ -49,8 +49,9 @@ export default function Solution() {
             Half the auxiliary shelf.
           </h2>
           <p className="mt-5 text-ink/60 text-lg leading-relaxed">
-            Greenaid works in two applications across a single reactive dyeing cycle — nothing added to your
-            machine, nothing changed in your recipe structure. Just fewer chemicals doing more work.
+            Greenaid works in two applications across a single reactive dyeing cycle on jigger, jet, soft-flow
+            or winch machines, cotton, terry towel or yarn, nothing added to your machine, nothing changed in
+            your recipe structure. Just fewer chemicals doing more work.
           </p>
         </Reveal>
 
@@ -58,7 +59,7 @@ export default function Solution() {
           <img src={jars} alt="Greenaid Alpha and Beta containers" className="w-full h-auto max-h-[420px] object-cover object-top" />
         </Reveal>
 
-        <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
           {CARDS.map((c, i) => (
             <Reveal key={c.name} delay={i * 0.12}>
               <div className="group relative h-full rounded-[28px] border border-ink/10 bg-white/70 p-8 md:p-10 overflow-hidden transition-all duration-500 hover:border-ink/20 hover:shadow-2xl hover:shadow-ink/5 hover:-translate-y-1">
@@ -107,7 +108,7 @@ export default function Solution() {
             <span className="font-sans font-bold text-[12px] uppercase tracking-[0.2em] text-lime">Trade Secret</span>
             <p className="mt-2 text-cream/80 max-w-xl leading-relaxed">
               The formulation behind Alpha &amp; Beta is proprietary to AmeyBioChem. We disclose performance,
-              protocol and dosage in full — never composition.
+              protocol and dosage in full, never composition.
             </p>
           </div>
           <div className="flex gap-8 shrink-0">

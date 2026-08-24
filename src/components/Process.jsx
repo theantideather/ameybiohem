@@ -26,7 +26,7 @@ export default function Process() {
             No new training.
           </h2>
           <p className="mt-5 text-mist text-lg leading-relaxed">
-            Greenaid drops into your existing exhaust dyeing sequence — same machines, same operators,
+            Greenaid drops into your existing exhaust dyeing sequence, same machines, same operators,
             same shift pattern. Just less chemical going in at each step.
           </p>
           <BlogLink to="/blog/application-protocol-walkthrough">Read the full step-by-step walkthrough</BlogLink>

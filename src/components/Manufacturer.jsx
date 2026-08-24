@@ -6,7 +6,7 @@ export default function Manufacturer() {
   return (
     <section className="relative bg-void py-24 md:py-28 border-y border-white/10 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid lg:grid-cols-[1fr_1fr] gap-10 lg:gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-10 lg:gap-16 items-center">
           <Reveal>
             <Eyebrow tone="gold">Original Manufacturer</Eyebrow>
             <h2 className="text-display-md text-3xl md:text-4xl mt-4 font-semibold text-cream leading-tight">
@@ -17,13 +17,13 @@ export default function Manufacturer() {
             <p className="mt-5 text-mist text-lg leading-relaxed">
               Greenaid Alpha &amp; Beta are formulated and manufactured exclusively by AmeyBioChem. Across
               our active regions, super stockists carry this same system and resell it under their own
-              trade names to factories in their territory — the drum in front of your machine may not
+              trade names to factories in their territory, the drum in front of your machine may not
               say "Greenaid" on it at all.
             </p>
             <p className="mt-4 text-mist text-lg leading-relaxed">
               The formulation, the batch quality and the performance data on this page are ours either
               way. If you want to confirm what you're already running, ask your supplier who manufactures
-              it — or come straight to us.
+              it, or come straight to us.
             </p>
             <BlogLink to="/blog/genuine-or-rebranded" tone="gold">How to check what's actually in your drum</BlogLink>
           </Reveal>

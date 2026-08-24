@@ -24,7 +24,7 @@ export default function EnvironmentalImpact() {
             the drain, too.
           </h2>
           <p className="mt-5 text-mist text-lg leading-relaxed">
-            Lower salt and alkali load means lower conductivity and dissolved solids downstream —
+            Lower salt and alkali load means lower conductivity and dissolved solids downstream -
             without a single restricted substance in the formulation.
           </p>
         </Reveal>

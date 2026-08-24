@@ -103,7 +103,7 @@ export default function ImpactDashboard() {
           </div>
         </Reveal>
 
-        <div className="grid lg:grid-cols-[1fr_1fr] gap-10 lg:gap-16 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-10 lg:gap-16 items-start">
           <Reveal className="rounded-[28px] border border-white/10 bg-white/[0.03] p-8 md:p-10 space-y-9">
             <span className="font-sans font-bold text-[12px] uppercase tracking-[0.18em] text-mist">Process & Quality</span>
             {PROCESS_BARS.map((b) => (
@@ -112,13 +112,13 @@ export default function ImpactDashboard() {
           </Reveal>
 
           <Reveal delay={0.1} className="rounded-[28px] border border-white/10 bg-white/[0.03] p-8 md:p-10">
-            <span className="font-sans font-bold text-[12px] uppercase tracking-[0.18em] text-mist">Colour Fastness — ISO 105</span>
+            <span className="font-sans font-bold text-[12px] uppercase tracking-[0.18em] text-mist">Colour Fastness, ISO 105</span>
             <div className="mt-6 space-y-4">
               {[
-                ['Wash Fastness — Shade Change', '3–4', '4–5'],
-                ['Wash Fastness — Cotton Staining', '3–4', '4–5'],
-                ['Rub Fastness — Dry', '3–4', '4–5'],
-                ['Rub Fastness — Wet', '2–3', '3–4'],
+                ['Wash Fastness, Shade Change', '3–4', '4–5'],
+                ['Wash Fastness, Cotton Staining', '3–4', '4–5'],
+                ['Rub Fastness, Dry', '3–4', '4–5'],
+                ['Rub Fastness, Wet', '2–3', '3–4'],
                 ['Lightfastness', '4–5', '4–5'],
                 ['Perspiration Fastness', '3–4', '4–5'],
               ].map(([label, before, after]) => (
@@ -142,7 +142,7 @@ export default function ImpactDashboard() {
 
         <Reveal delay={0.15} className="mt-10 rounded-2xl border border-white/10 bg-white/[0.02] p-6 md:p-7 flex flex-col md:flex-row items-start md:items-center justify-between gap-5">
           <p className="text-sm text-mist leading-relaxed max-w-2xl">
-            These are trial benchmarks — your machine, water, dyestuff and shade will move the exact
+            These are trial benchmarks, your machine, water, dyestuff and shade will move the exact
             numbers up or down. Book a trial batch and we'll run it on your own setup, tailored to you.
           </p>
           <Link

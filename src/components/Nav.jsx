@@ -5,8 +5,8 @@ import Logo from './Logo'
 
 const LINKS = [
   { href: '/#calculator', label: 'Calculator' },
-  { href: '/#solution', label: 'Product' },
-  { href: '/#impact', label: 'Impact' },
+  { href: '/product', label: 'Product' },
+  { href: '/impact', label: 'Impact' },
   { href: '/blog', label: 'Journal' },
   { href: '/careers', label: 'Careers' },
   { href: '/#contact', label: 'Contact' },
@@ -44,12 +44,19 @@ export default function Nav() {
         </Link>
 
         <nav className="hidden lg:flex items-center gap-7 text-[13px] font-medium text-mist whitespace-nowrap">
-          {LINKS.map((l) => (
-            <a key={l.href} href={l.href} className="relative group py-1 hover:text-cream transition-colors">
-              {l.label}
-              <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-lime transition-all duration-300 group-hover:w-full" />
-            </a>
-          ))}
+          {LINKS.map((l) =>
+            l.href.includes('#') ? (
+              <a key={l.href} href={l.href} className="relative group py-1 hover:text-cream transition-colors">
+                {l.label}
+                <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-lime transition-all duration-300 group-hover:w-full" />
+              </a>
+            ) : (
+              <Link key={l.href} to={l.href} className="relative group py-1 hover:text-cream transition-colors">
+                {l.label}
+                <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-lime transition-all duration-300 group-hover:w-full" />
+              </Link>
+            )
+          )}
         </nav>
 
         <motion.a

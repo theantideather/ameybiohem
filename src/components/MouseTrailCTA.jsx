@@ -90,12 +90,12 @@ export default function MouseTrailCTA() {
         <Reveal delay={0.16}>
           <p className="mt-7 text-lg text-mist max-w-xl mx-auto leading-relaxed">
             Send us your fabric, your machine specs and your standard recipe. We'll run a trial batch
-            alongside your conventional process — same shift, side by side.
+            alongside your conventional process, same shift, side by side.
           </p>
         </Reveal>
         <Reveal delay={0.24} className="mt-10 flex flex-wrap items-center justify-center gap-4">
           <a
-            href="mailto:ameychemtech@gmail.com?subject=Trial%20Batch%20Request%20—%20Greenaid%20Alpha%20%26%20Beta"
+            href="mailto:ameychemtech@gmail.com?subject=Trial%20Batch%20Request%20-%20Greenaid%20Alpha%20%26%20Beta"
             className="inline-flex items-center gap-2 bg-lime text-ink font-medium rounded-full px-8 py-4 hover:bg-lime-2 transition-colors"
           >
             ameychemtech@gmail.com

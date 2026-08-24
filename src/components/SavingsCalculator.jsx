@@ -78,11 +78,11 @@ export default function SavingsCalculator() {
           </h2>
           <p className="mt-5 text-ink/60 text-lg leading-relaxed">
             Alpha and Beta, run together as one system, against your normal process. Set your batch
-            weight and daily batch count — see the saving per batch, per kilogram, per day and per month.
+            weight and daily batch count, see the saving per batch, per kilogram, per day and per month.
           </p>
         </Reveal>
 
-        <div className="grid lg:grid-cols-[1fr_0.85fr] gap-6 lg:gap-8 items-stretch">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_0.85fr] gap-6 lg:gap-8 items-stretch">
           {/* Controls */}
           <Reveal className="rounded-[28px] border border-ink/10 bg-white/70 p-8 md:p-10 space-y-10">
             <div>
@@ -97,7 +97,7 @@ export default function SavingsCalculator() {
                 </span>
               </div>
               <p className="mt-3 text-xs text-ink/45 leading-relaxed">
-                Alpha and Beta are always used together — one at the dyebath, one after dyeing.
+                Alpha and Beta are always used together, one at the dyebath, one after dyeing.
               </p>
             </div>
 

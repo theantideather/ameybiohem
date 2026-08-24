@@ -3,8 +3,8 @@ import Reveal from './Reveal'
 import Eyebrow from './Eyebrow'
 
 const AUXILIARIES = [
-  ['Sodium Chloride / Sulphate', 'Electrolyte — dye exhaustion', '40 – 100 g/L', '16 – 60 g/L', '40–60%'],
-  ['Sodium Carbonate', 'Soda ash — fixation activator', '8 – 20 g/L', '3 – 12 g/L', '40–60%'],
+  ['Sodium Chloride / Sulphate', 'Electrolyte, dye exhaustion', '40 – 100 g/L', '16 – 60 g/L', '40–60%'],
+  ['Sodium Carbonate', 'Soda ash, fixation activator', '8 – 20 g/L', '3 – 12 g/L', '40–60%'],
   ['Wetting Agent', 'Substrate penetration', '0.5 – 1.5 g/L', 'Integrated in Alpha', '~50%'],
   ['Chelating / Sequestering Agent', 'Removes Ca, Mg, trace metals', '0.5 – 1.5 g/L', 'Integrated in Alpha', '~50%'],
   ['Leveling / Migration Agent', 'Even dye strike', '0.5 – 2.0 g/L', 'Integrated in Alpha', '~50%'],
@@ -77,16 +77,16 @@ export default function SpecTables() {
           <p className="mt-5 text-ink/60 text-lg leading-relaxed">
             Exact dosage ranges from controlled trials across 0.5–4.0% owf shade depths, on 100% cotton
             single jersey and woven poplin. Confirm exact figures through a mill-specific trial. We keep
-            the formulation to ourselves — everything else here is exactly what we measured.
+            the formulation to ourselves, everything else here is exactly what we measured.
           </p>
         </Reveal>
 
         <div className="space-y-8">
           <Reveal>
-            <Table title="Auxiliary Dosage — Conventional vs Greenaid" cols={['Auxiliary', 'Function', 'Conventional', 'With Greenaid', 'Reduction']} rows={AUXILIARIES} />
+            <Table title="Auxiliary Dosage, Conventional vs Greenaid" cols={['Auxiliary', 'Function', 'Conventional', 'With Greenaid', 'Reduction']} rows={AUXILIARIES} />
           </Reveal>
           <Reveal delay={0.08}>
-            <Table title="Effluent Quality — Conventional vs Greenaid" cols={['Parameter', 'Conventional', 'With Greenaid', 'Improvement']} rows={EFFLUENT} />
+            <Table title="Effluent Quality, Conventional vs Greenaid" cols={['Parameter', 'Conventional', 'With Greenaid', 'Improvement']} rows={EFFLUENT} />
             <Link
               to="/blog/effluent-and-etp-load"
               className="mt-4 inline-flex items-center gap-2 text-sm font-semibold rounded-full border border-pine/40 text-pine bg-pine/5 hover:bg-pine/10 hover:border-pine px-4 py-2 transition-colors"

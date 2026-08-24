@@ -5,7 +5,7 @@ const TONES = {
   gold: 'border-gold/40 text-gold hover:bg-gold/10 hover:border-gold',
 }
 
-// Standard "read the article" pill — bordered and filled on hover so it
+// Standard "read the article" pill, bordered and filled on hover so it
 // reads as clickable, not just a stray line of coloured text.
 export default function BlogLink({ to, tone = 'lime', children, className = '' }) {
   return (

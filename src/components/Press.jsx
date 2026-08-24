@@ -35,7 +35,7 @@ export default function Press() {
                   "With powerful tools, experience, and innovation, we are able to solve the challenges of
                   textile manufacturing companies since our inception."
                 </p>
-                <p className="mt-2 text-sm text-ink/50 font-medium">— Jayant Gurram, Director, Amey ChemTech</p>
+                <p className="mt-2 text-sm text-ink/50 font-medium">Jayant Gurram, Director, Amey ChemTech</p>
                 <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-pine group-hover:gap-3 transition-all">
                   Read the full feature <span aria-hidden>→</span>
                 </span>
@@ -53,7 +53,7 @@ export default function Press() {
         </Reveal>
 
         <Reveal delay={0.14} className="mt-6 text-center text-xs text-ink/40 max-w-lg mx-auto leading-relaxed">
-          AmeyBioChem operates under the Amey group — the same Solapur-based manufacturer profiled here,
+          AmeyBioChem operates under the Amey group, the same Solapur-based manufacturer profiled here,
           established 1997, now bringing Greenaid Alpha &amp; Beta to reactive dyeing.
         </Reveal>
       </div>

@@ -16,7 +16,7 @@ export default function BlogIndex() {
           </h1>
           <p className="mt-5 text-ink/60 text-lg leading-relaxed max-w-xl">
             Long-form pieces on what Greenaid Alpha &amp; Beta actually do, and why the numbers work out
-            the way they do — drawn from the technical dossier, not marketing copy.
+            the way they do, drawn from the technical dossier, not marketing copy.
           </p>
         </Reveal>
 

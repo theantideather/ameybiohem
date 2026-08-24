@@ -6,10 +6,10 @@ const COLS = [
   {
     title: 'Product',
     links: [
-      { label: 'Greenaid Alpha', href: '/#solution' },
-      { label: 'Greenaid Beta', href: '/#solution' },
+      { label: 'Greenaid Alpha', href: '/product' },
+      { label: 'Greenaid Beta', href: '/product' },
       { label: 'Application Protocol', href: '/#process' },
-      { label: 'Impact Data', href: '/#impact' },
+      { label: 'Impact Data', href: '/impact' },
     ],
   },
   {
@@ -36,7 +36,7 @@ export default function Footer() {
   return (
     <footer className="relative bg-void border-t border-white/10 pt-20 pb-10 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
-        <Reveal className="grid md:grid-cols-[1.4fr_1fr_1fr_1fr] gap-12 pb-16 border-b border-white/10">
+        <Reveal className="grid grid-cols-1 md:grid-cols-[1.4fr_1fr_1fr_1fr] gap-12 pb-16 border-b border-white/10">
           <div>
             <div className="flex items-center gap-2.5">
               <Logo size={32} />
@@ -46,7 +46,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="mt-5 text-mist text-sm leading-relaxed max-w-xs">
-              A two-part reactive-dyeing system engineered to cut salt, soda, water and energy —
+              A two-part reactive-dyeing system engineered to cut salt, soda, water and energy -
               without touching your machines or your shade.
             </p>
             <div className="mt-6 flex flex-wrap gap-2">

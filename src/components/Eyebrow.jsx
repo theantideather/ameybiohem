@@ -5,7 +5,7 @@ const TONES = {
   pine: 'text-pine',
 }
 
-// A tiny droplet glyph + a legible label in the site's own sans — used at the
+// A tiny droplet glyph + a legible label in the site's own sans, used at the
 // top of every section instead of a squint-sized monospace tag. Repeating
 // this one mark everywhere is the site's connecting thread.
 export default function Eyebrow({ children, tone = 'lime', className = '' }) {

@@ -9,21 +9,21 @@ import Eyebrow from './Eyebrow'
 // matches the INDIA_PATH projection exactly, not eyeballed. Featured cities
 // (HQ + primary trial sites) lead the cycle and render as larger markers.
 const CITIES = [
-  { name: 'Solapur', state: 'Maharashtra', x: 137.8, y: 356.8, featured: true, tag: 'HQ' },
-  { name: 'Bhilwara', state: 'Rajasthan', x: 114.1, y: 203.0, featured: true },
-  { name: 'Amravati', state: 'Maharashtra', x: 172.6, y: 291.3, featured: true },
-  { name: 'Ichalkaranji', state: 'Maharashtra', x: 111.0, y: 376.2, featured: true },
-  { name: 'Ludhiana', state: 'Punjab', x: 137.0, y: 92.0 },
-  { name: 'Panipat', state: 'Haryana', x: 157.6, y: 122.2 },
-  { name: 'Ahmedabad', state: 'Gujarat', x: 76.1, y: 249.4 },
-  { name: 'Vadodara', state: 'Gujarat', x: 87.4, y: 263.8 },
-  { name: 'Surat', state: 'Gujarat', x: 80.7, y: 286.6 },
-  { name: 'Mumbai', state: 'Maharashtra', x: 81.6, y: 328.4 },
-  { name: 'Bhiwandi', state: 'Maharashtra', x: 85.0, y: 324.0 },
-  { name: 'Indore', state: 'Madhya Pradesh', x: 137.0, y: 255.6 },
-  { name: 'Erode', state: 'Tamil Nadu', x: 171.7, y: 483.2 },
-  { name: 'Tiruppur', state: 'Tamil Nadu', x: 164.5, y: 487.8 },
-  { name: 'Coimbatore', state: 'Tamil Nadu', x: 157.6, y: 489.6 },
+  { name: 'Solapur', state: 'Maharashtra', x: 142.8, y: 388.8, featured: true, tag: 'HQ' },
+  { name: 'Bhilwara', state: 'Rajasthan', x: 119.3, y: 235.0, featured: true },
+  { name: 'Amravati', state: 'Maharashtra', x: 177.4, y: 323.2, featured: true },
+  { name: 'Ichalkaranji', state: 'Maharashtra', x: 116.1, y: 408.2, featured: true },
+  { name: 'Ludhiana', state: 'Punjab', x: 142.0, y: 124.0 },
+  { name: 'Panipat', state: 'Haryana', x: 162.5, y: 154.2 },
+  { name: 'Ahmedabad', state: 'Gujarat', x: 81.4, y: 281.4 },
+  { name: 'Vadodara', state: 'Gujarat', x: 92.7, y: 295.8 },
+  { name: 'Surat', state: 'Gujarat', x: 86.0, y: 318.6 },
+  { name: 'Mumbai', state: 'Maharashtra', x: 86.9, y: 360.4 },
+  { name: 'Bhiwandi', state: 'Maharashtra', x: 90.3, y: 356.0 },
+  { name: 'Indore', state: 'Madhya Pradesh', x: 142.0, y: 287.6 },
+  { name: 'Erode', state: 'Tamil Nadu', x: 176.5, y: 515.2 },
+  { name: 'Tiruppur', state: 'Tamil Nadu', x: 169.3, y: 519.8 },
+  { name: 'Coimbatore', state: 'Tamil Nadu', x: 162.5, y: 521.6 },
 ]
 
 const [VB_X, VB_Y, VB_W, VB_H] = INDIA_VIEWBOX.split(' ').map(Number)

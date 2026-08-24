@@ -71,7 +71,7 @@ function TrailCanvas() {
 
 export default function MouseTrailCTA() {
   return (
-    <section id="contact" className="relative bg-ink py-32 md:py-44 overflow-hidden cursor-crosshair">
+    <section id="contact" className="relative bg-ink py-32 md:py-44 overflow-hidden cursor-crosshair noise-overlay">
       <div className="absolute inset-0 grid-lines opacity-15" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] rounded-full bg-forest/50 blur-[160px]" />
       <TrailCanvas />

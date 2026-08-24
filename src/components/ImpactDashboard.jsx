@@ -73,7 +73,7 @@ function RangeBar({ label, before, after, unit, inverse }) {
 
 export default function ImpactDashboard() {
   return (
-    <section id="impact" className="relative bg-ink py-24 md:py-32 overflow-hidden">
+    <section id="impact" className="relative bg-ink py-24 md:py-32 overflow-hidden noise-overlay">
       <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
       <div className="max-w-7xl mx-auto px-6">
         <Reveal className="max-w-2xl mb-14 md:mb-16">

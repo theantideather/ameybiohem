@@ -61,11 +61,14 @@ body {
   font-family: var(--font-mono);
 }
 
-/* Brand logotype, flowing Spencerian-style script, Coca-Cola-style confidence, used only for the wordmark */
+/* Brand logotype, flowing Spencerian-style script, Coca-Cola-style confidence, used only for the wordmark.
+   Beau Rivage only ships one weight, so font-weight here triggers the browser's synthetic bold, and the
+   text-stroke reinforces it so the thin script strokes stay visible at small sizes. */
 .font-brand {
   font-family: "Beau Rivage", cursive;
-  font-weight: 400;
+  font-weight: 700;
   letter-spacing: 0.02em;
+  -webkit-text-stroke: 0.4px currentColor;
 }
 
 /* Apple typography: negative tracking as size grows, tight leading on display */

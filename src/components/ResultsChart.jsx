@@ -66,7 +66,7 @@ function Bar({ value, label, highlight, showTooltip, delay }) {
 
 export default function ResultsChart() {
   return (
-    <section className="relative bg-ink py-24 md:py-32 overflow-hidden">
+    <section className="relative bg-ink py-24 md:py-32 overflow-hidden noise-overlay">
       <div className="max-w-5xl mx-auto px-6">
         <Reveal className="text-center mb-4">
           <Eyebrow tone="gold" className="justify-center">Measured, Not Promised</Eyebrow>

@@ -4,7 +4,7 @@ import Eyebrow from './Eyebrow'
 
 export default function WaterCredits() {
   return (
-    <section className="relative bg-cream text-ink py-20 md:py-28 border-t border-ink/10">
+    <section className="relative bg-cream text-ink py-20 md:py-28 border-t border-ink/10 noise-overlay">
       <div className="max-w-5xl mx-auto px-6">
         <Reveal className="max-w-2xl mb-10">
           <Eyebrow tone="pine">Looking Ahead</Eyebrow>

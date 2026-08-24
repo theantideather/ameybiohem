@@ -5,7 +5,7 @@ import Eyebrow from './Eyebrow'
 
 export default function BlogTeaser() {
   return (
-    <section className="relative bg-bone text-ink py-24 md:py-32">
+    <section className="relative bg-bone text-ink py-24 md:py-32 noise-overlay">
       <div className="max-w-7xl mx-auto px-6">
         <Reveal className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
           <div className="max-w-xl">

@@ -67,7 +67,7 @@ export default function SavingsCalculator() {
   const perMonth = perDay * WORKING_DAYS_PER_MONTH
 
   return (
-    <section id="calculator" className="relative bg-cream text-ink py-28 md:py-36">
+    <section id="calculator" className="relative bg-cream text-ink py-28 md:py-36 noise-overlay">
       <div className="max-w-7xl mx-auto px-6">
         <Reveal className="max-w-2xl mb-14 md:mb-16">
           <Eyebrow tone="pine">Savings Calculator</Eyebrow>

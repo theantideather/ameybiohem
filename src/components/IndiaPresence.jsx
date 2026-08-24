@@ -51,7 +51,7 @@ export default function IndiaPresence() {
   }
 
   return (
-    <section ref={sectionRef} className="relative bg-forest py-24 md:py-36 overflow-hidden">
+    <section ref={sectionRef} className="relative bg-forest py-24 md:py-36 overflow-hidden noise-overlay">
       <div className="absolute -top-1/3 right-0 w-[800px] h-[800px] rounded-full bg-pine/20 blur-[180px]" />
       <div className="absolute -bottom-1/3 left-0 w-[600px] h-[600px] rounded-full bg-forest-2/40 blur-[160px]" />
       <div className="max-w-7xl mx-auto px-6 relative">

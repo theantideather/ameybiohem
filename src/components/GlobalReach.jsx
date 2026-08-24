@@ -13,7 +13,7 @@ const GROUP = [
 
 export default function GlobalReach() {
   return (
-    <section className="relative bg-forest py-20 md:py-28 border-t border-white/10 overflow-hidden">
+    <section className="relative bg-void py-20 md:py-28 border-t border-white/10 overflow-hidden noise-overlay">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-10 lg:gap-16 items-center">
           <Reveal>

@@ -5,14 +5,14 @@ import Eyebrow from './Eyebrow'
 const AUXILIARIES = [
   ['Sodium Chloride / Sulphate', 'Electrolyte, dye exhaustion', '40 – 100 g/L', '16 – 60 g/L', '40–60%'],
   ['Sodium Carbonate', 'Soda ash, fixation activator', '8 – 20 g/L', '3 – 12 g/L', '40–60%'],
-  ['Wetting Agent', 'Substrate penetration', '0.5 – 1.5 g/L', 'Integrated in Alpha', '~50%'],
-  ['Chelating / Sequestering Agent', 'Removes Ca, Mg, trace metals', '0.5 – 1.5 g/L', 'Integrated in Alpha', '~50%'],
-  ['Leveling / Migration Agent', 'Even dye strike', '0.5 – 2.0 g/L', 'Integrated in Alpha', '~50%'],
-  ['Anti-Foaming Agent', 'Foam control', '0.1 – 0.5 g/L', 'Integrated in Alpha', '~50%'],
-  ['Cationic Dye-Fixative', 'Wash fastness of residual dye', '1.0 – 2.0% owf', '0.5 – 1.0% owf', '~50%'],
-  ['Soaping / Washing-Off Agent', 'Removes unfixed dye', '1.0 – 2.0 g/L', '0.5 – 1.0 g/L', '~50%'],
+  ['Wetting Agent', 'Substrate penetration', '0.5 – 1.5 g/L', 'Integrated in Alpha', 'Eliminated'],
+  ['Chelating / Sequestering Agent', 'Removes Ca, Mg, trace metals', '0.5 – 1.5 g/L', 'Integrated in Alpha', 'Eliminated'],
+  ['Leveling / Migration Agent', 'Even dye strike', '0.5 – 2.0 g/L', 'Integrated in Alpha', 'Eliminated'],
+  ['Anti-Foaming Agent', 'Foam control', '0.1 – 0.5 g/L', 'Integrated in Alpha', 'Eliminated'],
+  ['Cationic Dye-Fixative', 'Wash fastness of residual dye', '1.0 – 2.0% owf', 'Eliminated', '100%'],
+  ['Soaping / Washing-Off Agent', 'Removes unfixed dye', '1.0 – 2.0 g/L', 'Eliminated', '100%'],
   ['Neutralising Agent (Acetic Acid)', 'Dyebath / fabric neutralisation', '0.5 – 1.5 g/L', '0.25 – 0.75 g/L', '~50%'],
-  ['Textile Softener', 'Handle & drape restoration', '1.0 – 3.0% owf', '0.5 – 1.5% owf', '~50%'],
+  ['Textile Softener', 'Handle & drape restoration', '1.0 – 3.0% owf', 'Eliminated', '100%'],
 ]
 
 const EFFLUENT = [
@@ -65,7 +65,7 @@ function Table({ title, rows, cols }) {
 
 export default function SpecTables() {
   return (
-    <section className="relative bg-bone text-ink py-24 md:py-32">
+    <section className="relative bg-bone text-ink py-24 md:py-32 noise-overlay">
       <div className="max-w-7xl mx-auto px-6">
         <Reveal className="max-w-2xl mb-14">
           <Eyebrow tone="pine">The Full Data Sheet</Eyebrow>

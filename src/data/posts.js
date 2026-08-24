@@ -44,7 +44,7 @@ export const POSTS = [
     slug: 'fastness-science',
     title: 'What Greenaid Beta Actually Does After Dyeing',
     excerpt:
-      'Fastness enhancer, after-treatment consolidator, dosage halver, Beta does three jobs in one bath. Here is the ISO 105 data behind the claim.',
+      'Fastness enhancer, auxiliary eliminator, dosage halver, Beta does three jobs in one bath. Here is the ISO 105 data behind the claim.',
     tag: 'Product Science',
     image: jetDyeingMachine,
     readTime: '5 min read',
@@ -56,7 +56,7 @@ export const POSTS = [
       },
       { h: 'What Beta replaces' },
       {
-        p: 'Greenaid Beta is applied once, post-dyeing, at 1.0–1.5% owf, in a bath run at 40–60°C for 15–20 minutes. It acts as a colour-fastness enhancer and after-treatment consolidator: every one of those four after-treatment auxiliaries can run at roughly 50% of its conventional dosage, 0.5–1.0% owf fixative instead of 1.0–2.0%, 0.5–1.0 g/L soaping agent instead of 1.0–2.0 g/L, 0.25–0.75 g/L acetic acid instead of 0.5–1.5 g/L, 0.5–1.5% owf softener instead of 1.0–3.0%, without compromising fastness ratings or fabric handle.',
+        p: 'Greenaid Beta is applied once, post-dyeing, at 1.0–1.5% owf, in a bath run at 40–60°C for 15–20 minutes. It acts as a colour-fastness enhancer and after-treatment consolidator: three of those four after-treatment auxiliaries, the cationic fixative, the soaping agent and the softener, are eliminated entirely, no separate purchase, no separate dosing step. The fourth, acetic acid, still runs but at roughly half the conventional dosage, 0.25–0.75 g/L instead of 0.5–1.5 g/L, without compromising fastness ratings or fabric handle.',
       },
       { h: 'The fastness data' },
       {
@@ -93,7 +93,7 @@ export const POSTS = [
         p: 'Wetting, chelating, leveling and anti-foam agents: four separate product purchases collapse into functions integrated inside Alpha, one fewer set of products to procure, store, dose and train staff on.',
       },
       {
-        p: 'After-treatment auxiliaries (fixative, soaping agent, acid, softener): roughly 50% of conventional spend, with Beta doing the consolidating.',
+        p: 'After-treatment auxiliaries: the fixative, soaping agent and softener are eliminated outright, zero purchase, with only the acetic acid line remaining, at roughly 50% of conventional spend.',
       },
       {
         p: 'Water consumption: rinse cycles drop from a 4–6 standard down to 2–3, for a 25–33% water saving per batch, which also reduces the volume an ETP has to process.',
@@ -167,7 +167,7 @@ export const POSTS = [
       { p: '3. Add salt at 40–60% of your normal dosage. Not your full normal amount, this is the point of the whole protocol.' },
       { p: '4. Add soda ash, also at 40–60% of normal dosage, to fix the dye.' },
       { p: '5. Drain and hot rinse at 70–80°C for 10–15 minutes.' },
-      { p: '6. Run the Beta bath at 40–60°C for 15–20 minutes, at 1.0–1.5% owf, with every after-treatment auxiliary, fixative, soaping agent, acetic acid, softener, dosed at 50% of normal.' },
+      { p: '6. Run the Beta bath at 40–60°C for 15–20 minutes, at 1.0–1.5% owf. Skip the separate fixative, soaping agent and softener, Beta replaces them. Dose only the acetic acid neutraliser, at 50% of normal.' },
       { p: '7. Final rinse at 40–50°C for 10 minutes. Fabric is ready for finishing.' },
       { h: 'What operators should watch for on the first few batches' },
       {
@@ -202,7 +202,7 @@ export const POSTS = [
       },
       { h: 'How to check' },
       {
-        p: 'Ask your current supplier directly who manufactures what you\'re using. If the answer is vague, or if the performance numbers on your product sheet look close to the ones on this page, 40–60% salt and soda reduction, ~50% cut in after-treatment auxiliaries, 2–4 month payback, it\'s worth a direct conversation with us. We\'ll tell you plainly whether it\'s our formulation or not.',
+        p: 'Ask your current supplier directly who manufactures what you\'re using. If the answer is vague, or if the performance numbers on your product sheet look close to the ones on this page, 40–60% salt and soda reduction, fixative, soaping agent and softener eliminated outright, 2–4 month payback, it\'s worth a direct conversation with us. We\'ll tell you plainly whether it\'s our formulation or not.',
       },
     ],
   },
@@ -254,7 +254,7 @@ export const POSTS = [
       },
       { h: 'What changed' },
       {
-        p: 'The shorter cycle time, in line with the ~25% reduction seen across trial sites, translated directly into more completed batches on the Greenaid line by the end of the shift, without adding a second shift or new machinery. The unit\'s existing after-treatment sequence needed no changes beyond dosing fixative, soaping agent and softener at the reduced Beta protocol.',
+        p: 'The shorter cycle time, in line with the ~25% reduction seen across trial sites, translated directly into more completed batches on the Greenaid line by the end of the shift, without adding a second shift or new machinery. The unit\'s existing after-treatment sequence simplified too, the separate fixative, soaping agent and softener steps dropped out entirely under the Beta protocol.',
       },
       { h: 'The practical takeaway' },
       {
@@ -338,7 +338,7 @@ export const POSTS = [
       },
       { h: 'What changed' },
       {
-        p: 'Monthly salt and soda ash purchase volume dropped in line with the 40–60% dosage reduction seen across other sites, and the unit\'s after-treatment auxiliary purchases, fixative, soaping agent, softener, came down by roughly half, consistent with the Beta protocol. For a smaller unit where procurement is managed manually rather than through a large purchasing department, the more compressed monthly chemical order was, in the owner\'s own account, as valuable operationally as the rupee saving itself.',
+        p: 'Monthly salt and soda ash purchase volume dropped in line with the 40–60% dosage reduction seen across other sites, and the unit\'s after-treatment auxiliary purchases, fixative, soaping agent, softener, stopped altogether, with only the acetic acid line remaining on the order, consistent with the Beta protocol. For a smaller unit where procurement is managed manually rather than through a large purchasing department, the shorter monthly chemical order was, in the owner\'s own account, as valuable operationally as the rupee saving itself.',
       },
       { h: 'What this tells us about smaller clusters' },
       {

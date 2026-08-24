@@ -9,13 +9,13 @@ const STEPS = [
   { n: '03', title: 'Salt', detail: 'Add salt at 40–60% of your normal dosage.' },
   { n: '04', title: 'Soda Ash', detail: 'Add soda ash at 40–60% of your normal dosage to fix.' },
   { n: '05', title: 'Drain & Rinse', detail: 'Drain, hot rinse at 70–80°C for 10–15 minutes.' },
-  { n: '06', title: 'Beta Bath', detail: 'Beta bath 40–60°C, 1.0–1.5% owf with all after-treatment auxiliaries at 50% dosage, 15–20 min.' },
+  { n: '06', title: 'Beta Bath', detail: 'Beta bath 40–60°C, 1.0–1.5% owf. Skip the separate fixative, soaping agent and softener, dose only acetic acid at 50%, 15–20 min.' },
   { n: '07', title: 'Final Rinse', detail: 'Final rinse at 40–50°C for 10 minutes. Ready for finishing.' },
 ]
 
 export default function Process() {
   return (
-    <section id="process" className="relative bg-ink py-28 md:py-36 overflow-hidden">
+    <section id="process" className="relative bg-ink py-28 md:py-36 overflow-hidden noise-overlay">
       <div className="absolute inset-0 grid-lines opacity-20" />
       <div className="max-w-7xl mx-auto px-6 relative">
         <Reveal className="max-w-2xl mb-16">

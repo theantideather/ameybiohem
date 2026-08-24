@@ -4,7 +4,7 @@ import articleShot from '../assets/press/industry-outlook-article.png'
 
 export default function Press() {
   return (
-    <section className="relative bg-bone text-ink py-20 md:py-28">
+    <section className="relative bg-bone text-ink py-20 md:py-28 noise-overlay">
       <div className="max-w-5xl mx-auto px-6">
         <Reveal className="text-center mb-12">
           <Eyebrow tone="pine">As Featured In</Eyebrow>

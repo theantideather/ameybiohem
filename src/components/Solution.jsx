@@ -9,8 +9,8 @@ const CARDS = [
     role: 'Dyebath Conditioner',
     dose: '1.0–1.5% owf · added at dyebath start',
     desc:
-      'A single dosage at the start of the dyebath that lets you drop salt and soda ash 40–60% while reducing the wetting, chelating, leveling and anti-foaming agents you’d normally dose separately, by roughly half.',
-    points: ['Salt reduced 40–60%', 'Soda ash reduced 40–60%', 'Wetting / chelating / leveling / anti-foam ↓ ~50%'],
+      'A single dosage at the start of the dyebath that lets you drop salt and soda ash 40–60% while eliminating the wetting, chelating, leveling and anti-foaming agents you’d normally dose separately, their function is built into Alpha itself.',
+    points: ['Salt reduced 40–60%', 'Soda ash reduced 40–60%', 'Wetting / chelating / leveling / anti-foam eliminated'],
     spec: [
       ['Appearance', 'Clear to pale straw liquid'],
       ['pH (1% aqueous)', '6.5 – 7.5'],
@@ -25,8 +25,8 @@ const CARDS = [
     role: 'Fastness Enhancer',
     dose: '1.0–1.5% owf · applied post-dyeing',
     desc:
-      'Applied after dyeing, Beta lets every after-treatment auxiliary, fixative, soaping agent, acetic acid, softener, run at half its normal dosage, while lifting wash and rub fastness by up to a full ISO 105 grade.',
-    points: ['After-treatment auxiliaries ↓ ~50%', 'Wash / rub fastness +0.5–1.0 grade', 'Shade depth (K/S) +20%'],
+      'Applied after dyeing, Beta eliminates the cationic fixative, soaping agent and softener entirely, no separate purchase, no separate dosing step, and cuts the remaining acetic acid neutraliser by half, while lifting wash and rub fastness by up to a full ISO 105 grade.',
+    points: ['Fixative, soaping agent & softener eliminated', 'Wash / rub fastness +0.5–1.0 grade', 'Shade depth (K/S) +20%'],
     spec: [
       ['Appearance', 'Clear to pale yellow liquid'],
       ['Ionic Character', 'Weakly cationic'],
@@ -39,7 +39,7 @@ const CARDS = [
 
 export default function Solution() {
   return (
-    <section id="solution" className="relative bg-cream text-ink py-28 md:py-36">
+    <section id="solution" className="relative bg-cream text-ink py-28 md:py-36 noise-overlay">
       <div className="max-w-7xl mx-auto px-6">
         <Reveal className="max-w-2xl mb-16 md:mb-20">
           <Eyebrow tone="pine">The System</Eyebrow>

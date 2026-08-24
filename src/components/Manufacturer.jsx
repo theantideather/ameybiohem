@@ -4,7 +4,7 @@ import BlogLink from './BlogLink'
 
 export default function Manufacturer() {
   return (
-    <section className="relative bg-void py-24 md:py-28 border-y border-white/10 overflow-hidden">
+    <section className="relative bg-void py-24 md:py-28 border-y border-white/10 overflow-hidden noise-overlay">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-10 lg:gap-16 items-center">
           <Reveal>

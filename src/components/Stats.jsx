@@ -29,8 +29,8 @@ function StatCard({ s, i }) {
 
 export default function Stats() {
   return (
-    <section id="numbers" className="relative bg-forest py-28 md:py-36 overflow-hidden">
-      <div className="absolute -bottom-1/2 left-1/2 -translate-x-1/2 w-[900px] h-[900px] rounded-full bg-pine/25 blur-[160px]" />
+    <section id="numbers" className="relative bg-ink py-28 md:py-36 overflow-hidden noise-overlay">
+      <div className="absolute -bottom-1/2 left-1/2 -translate-x-1/2 w-[900px] h-[900px] rounded-full bg-forest-2/20 blur-[160px]" />
       <div className="max-w-7xl mx-auto px-6 relative">
         <Reveal className="max-w-2xl mb-16 md:mb-20">
           <Eyebrow tone="lime">The Numbers</Eyebrow>

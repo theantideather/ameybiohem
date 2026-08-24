@@ -31,11 +31,11 @@ function Table({ title, rows, cols }) {
         <span className="font-sans font-bold text-[12px] uppercase tracking-[0.18em] text-ink/40">{title}</span>
       </div>
       <div className="overflow-x-auto">
-        <table className="w-full text-sm">
+        <table className="w-full text-[10px] sm:text-sm table-fixed sm:table-auto">
           <thead>
             <tr className="border-t border-ink/10 text-left">
               {cols.map((c) => (
-                <th key={c} className="px-7 md:px-8 py-3 font-sans font-bold text-[12px] uppercase tracking-wider text-ink/40 whitespace-nowrap">
+                <th key={c} className="px-1.5 sm:px-7 md:px-8 py-2 sm:py-3 font-sans font-bold text-[8px] sm:text-[12px] uppercase tracking-tight sm:tracking-wider text-ink/40 whitespace-normal sm:whitespace-nowrap leading-tight">
                   {c}
                 </th>
               ))}
@@ -47,7 +47,7 @@ function Table({ title, rows, cols }) {
                 {r.map((cell, ci) => (
                   <td
                     key={ci}
-                    className={`px-7 md:px-8 py-3.5 whitespace-nowrap ${
+                    className={`px-1.5 sm:px-7 md:px-8 py-1.5 sm:py-3.5 whitespace-normal sm:whitespace-nowrap leading-tight ${
                       ci === 0 ? 'font-medium text-ink' : ci === r.length - 1 ? 'font-mono text-pine font-semibold' : 'text-ink/60'
                     }`}
                   >

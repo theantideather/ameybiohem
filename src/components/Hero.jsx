@@ -177,15 +177,15 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.35, ease: [0.16, 1, 0.3, 1] }}
             className="relative rounded-3xl border border-white/10 bg-white/[0.04] backdrop-blur-2xl p-6 md:p-7 shadow-2xl shadow-black/60"
           >
-            <div className="flex items-center justify-between mb-6">
-              <span className="font-sans font-bold text-[12px] uppercase tracking-[0.18em] text-mist">Live Dyehouse Feed</span>
+            <div className="flex flex-wrap items-center justify-between gap-2 mb-6">
+              <span className="font-sans font-bold text-[10px] sm:text-[12px] uppercase tracking-[0.14em] sm:tracking-[0.18em] text-mist">Live Dyehouse Feed</span>
               <div className="flex rounded-full border border-white/10 p-1 bg-black/40">
                 {Object.entries(MODES).map(([key]) => (
                   <motion.button
                     key={key}
                     onClick={() => setMode(key)}
                     whileTap={TAP}
-                    className={`relative font-sans font-bold text-[12px] uppercase tracking-[0.1em] px-3 py-1.5 rounded-full transition-colors ${
+                    className={`relative font-sans font-bold text-[10px] sm:text-[12px] uppercase tracking-[0.06em] sm:tracking-[0.1em] px-2 sm:px-3 py-1.5 rounded-full transition-colors ${
                       mode === key ? 'text-black' : 'text-mist hover:text-cream'
                     }`}
                   >

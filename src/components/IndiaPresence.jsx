@@ -157,10 +157,10 @@ export default function IndiaPresence() {
           <div className="text-center mb-6">
             <span className="font-sans font-bold text-[12px] uppercase tracking-[0.16em] text-gold">Case Studies by Location</span>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+          <div className="grid grid-cols-2 lg:grid-cols-5 gap-2.5 sm:gap-4">
             {[
+              { slug: 'case-study-bhilwara', place: 'Bhilwara, Rajasthan', label: 'Spinning & weaving mill · 25% less water in a water-stressed district', tag: '💧 Water Savings Spotlight', featured: true },
               { slug: 'case-study-solapur', place: 'Solapur', label: 'Home ground · HQ', tag: 'Towelling & terry' },
-              { slug: 'case-study-bhilwara', place: 'Bhilwara, Rajasthan', label: 'Spinning & weaving mill', tag: 'Hard-water trial' },
               { slug: 'case-study-amravati', place: 'Amravati', label: 'Processing unit', tag: 'Vidarbha region' },
               { slug: 'case-study-ichalkaranji', place: 'Ichalkaranji', label: 'Powerloom processing unit', tag: 'Throughput trial' },
               { slug: 'case-study-vijayawada', place: 'Vijayawada, AP', label: 'Reactive dyeing unit', tag: 'Effluent trial' },
@@ -168,12 +168,20 @@ export default function IndiaPresence() {
               <Link
                 key={cs.slug}
                 to={`/blog/${cs.slug}`}
-                className="group rounded-2xl border-2 border-white/12 bg-white/[0.04] p-5 hover:border-gold/60 hover:bg-white/[0.07] transition-colors shadow-lg shadow-black/20"
+                className={`group rounded-xl sm:rounded-2xl border transition-colors shadow-lg shadow-black/20 ${
+                  cs.featured
+                    ? 'col-span-2 lg:col-span-1 border-gold/60 bg-gold/[0.08] hover:bg-gold/[0.14] p-3.5 sm:p-5'
+                    : 'border-white/12 bg-white/[0.04] hover:border-gold/60 hover:bg-white/[0.07] p-3 sm:p-5'
+                }`}
               >
-                <span className="font-sans font-bold text-[11px] uppercase tracking-[0.14em] text-gold">{cs.tag}</span>
-                <div className="mt-2 font-bold text-cream group-hover:text-gold transition-colors">{cs.place}</div>
-                <div className="text-xs text-mist mt-1">{cs.label}</div>
-                <span className="mt-3 inline-flex items-center gap-1 text-xs font-semibold text-gold/80 group-hover:gap-2 transition-all">
+                <span className={`font-sans font-bold uppercase tracking-[0.1em] sm:tracking-[0.14em] ${cs.featured ? 'text-[10px] sm:text-[11px] text-gold' : 'text-[9px] sm:text-[11px] text-gold'}`}>
+                  {cs.tag}
+                </span>
+                <div className={`mt-1.5 sm:mt-2 font-bold text-cream group-hover:text-gold transition-colors ${cs.featured ? 'text-sm sm:text-base' : 'text-xs sm:text-base'}`}>
+                  {cs.place}
+                </div>
+                <div className={`text-mist mt-0.5 sm:mt-1 ${cs.featured ? 'text-[11px] sm:text-xs' : 'text-[10px] sm:text-xs'}`}>{cs.label}</div>
+                <span className="mt-2 sm:mt-3 inline-flex items-center gap-1 text-[10px] sm:text-xs font-semibold text-gold/80 group-hover:gap-2 transition-all">
                   Read <span aria-hidden>→</span>
                 </span>
               </Link>

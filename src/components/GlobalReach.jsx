@@ -1,6 +1,9 @@
 import Reveal from './Reveal'
 import Eyebrow from './Eyebrow'
 import GlobalGlobe from './GlobalGlobe'
+import itammaHall from '../assets/press/itamma-turkey-hall.png'
+import itammaBooth from '../assets/press/itamma-turkey-booth.png'
+import itammaTable from '../assets/press/itamma-turkey-greenaid-table.png'
 
 const GROUP = [
   { name: 'Amey Marketing', role: 'Sales & distribution network' },
@@ -31,11 +34,23 @@ export default function GlobalReach() {
               <div className="flex items-start gap-4">
                 <span className="font-sans font-bold text-[12px] uppercase tracking-[0.18em] text-gold shrink-0 mt-1">Milestone</span>
                 <p className="text-sm text-cream/85 leading-relaxed">
-                  AmeyBioChem represented at an international textile exhibition in Turkey alongside the
-                  Indian Textile Manufacturing Association, generating <span className="text-gold font-semibold">4,000+ leads</span> and{' '}
+                  AmeyBioChem represented at an international textile exhibition in Turkey as a member of{' '}
+                  <span className="text-gold font-semibold">ITAMMA</span> (Indian Textile Accessories &amp; Machinery
+                  Manufacturers' Association), generating <span className="text-gold font-semibold">4,000+ leads</span> and{' '}
                   <span className="text-gold font-semibold">600+ high-quality, convertible enquiries</span>, and opening
                   early interest across the European market.
                 </p>
+              </div>
+              <div className="mt-5 grid grid-cols-3 gap-2">
+                {[
+                  [itammaBooth, 'AmeyBioChem at the ITAMMA booth, Turkey textile exhibition'],
+                  [itammaTable, 'Greenaid Alpha & Beta literature on the ITAMMA member table'],
+                  [itammaHall, 'The exhibition hall floor, Turkey'],
+                ].map(([src, alt]) => (
+                  <div key={alt} className="rounded-lg overflow-hidden border border-gold/20 aspect-[4/3]">
+                    <img src={src} alt={alt} className="w-full h-full object-cover" />
+                  </div>
+                ))}
               </div>
             </div>
           </Reveal>

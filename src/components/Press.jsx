@@ -20,7 +20,7 @@ export default function Press() {
             rel="noopener noreferrer"
             className="group block rounded-[28px] border-2 border-ink/15 bg-white p-2 hover:border-gold/60 transition-colors duration-500 shadow-xl shadow-ink/5"
           >
-            <div className="rounded-[22px] border border-ink/10 p-8 md:p-12 grid md:grid-cols-[1fr_0.9fr] gap-8 items-center">
+            <div className="rounded-[22px] border border-ink/10 p-8 md:p-12 grid grid-cols-1 md:grid-cols-[1fr_0.9fr] gap-8 items-center">
               <div>
                 <div className="flex items-center gap-3 mb-5">
                   <span className="font-sans font-bold text-[12px] uppercase tracking-[0.2em] text-ink/40 border border-ink/15 rounded-full px-3 py-1">

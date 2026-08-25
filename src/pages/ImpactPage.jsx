@@ -4,8 +4,15 @@ import ImpactDashboard from '../components/ImpactDashboard'
 import ResultsChart from '../components/ResultsChart'
 import EnvironmentalImpact from '../components/EnvironmentalImpact'
 import WaterCredits from '../components/WaterCredits'
+import { useSeo } from '../hooks/useSeo'
 
 export default function ImpactPage() {
+  useSeo({
+    title: 'Water Saving in Reactive Dyeing: Measured Impact Data | Greenaid',
+    description:
+      'Measured water saving, effluent and chemical bill data for reactive dyeing with Greenaid Alpha & Beta, including the Bhilwara water-scarcity case study.',
+    path: '/impact',
+  })
   return (
     <div className="bg-ink">
       <div className="pt-36 pb-8 max-w-7xl mx-auto px-6">

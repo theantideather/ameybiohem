@@ -29,7 +29,7 @@ export default function EnvironmentalImpact() {
           </p>
         </Reveal>
 
-        <div className="mt-14 grid sm:grid-cols-3 gap-6 max-w-3xl">
+        <div className="mt-14 grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl">
           {STATS.map((s, i) => (
             <Reveal key={s.label} delay={i * 0.08} className="rounded-2xl border border-white/15 bg-white/[0.06] backdrop-blur-xl p-6">
               <div className="text-3xl font-semibold text-gradient-lime">{s.value}</div>

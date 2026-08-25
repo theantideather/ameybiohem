@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { Link, useParams, Navigate } from 'react-router-dom'
 import Reveal from '../components/Reveal'
 import { POSTS, getPost } from '../data/posts'
+import { useSeo } from '../hooks/useSeo'
 
 export default function BlogPost() {
   const { slug } = useParams()
@@ -10,6 +11,23 @@ export default function BlogPost() {
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [slug])
+
+  useSeo({
+    title: post ? `${post.title} | Greenaid Journal` : 'The Journal | Greenaid',
+    description: post?.excerpt,
+    path: post ? `/blog/${post.slug}` : undefined,
+    jsonLd: post
+      ? {
+          '@context': 'https://schema.org',
+          '@type': 'Article',
+          headline: post.title,
+          description: post.excerpt,
+          datePublished: post.date,
+          author: { '@type': 'Organization', name: 'AmeyBioChem' },
+          publisher: { '@type': 'Organization', name: 'AmeyBioChem' },
+        }
+      : undefined,
+  })
 
   if (!post) return <Navigate to="/blog" replace />
 
@@ -74,7 +92,7 @@ export default function BlogPost() {
         {more.length > 0 && (
           <div className="mt-16 pt-8 border-t border-ink/10">
             <span className="font-sans font-bold text-[12px] uppercase tracking-[0.18em] text-ink/40">More from the Journal</span>
-            <div className="mt-5 grid sm:grid-cols-2 gap-4">
+            <div className="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-4">
               {more.map((p) => (
                 <Link
                   key={p.slug}

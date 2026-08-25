@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { Phone, MessageCircle, Droplets, Zap, IndianRupee, CheckCircle2, Flame, Gauge } from 'lucide-react'
 import jars from '../assets/photos/jars.png'
+import { useSeo } from '../hooks/useSeo'
 
 const BOUNCE = { type: 'spring', bounce: 0.4, duration: 0.7 }
 
@@ -78,6 +79,11 @@ function CompareBar({ icon: Icon, label, before, after, unit, color }) {
 }
 
 export default function SimpleMode() {
+  useSeo({
+    title: 'Greenaid, Easy View | AmeyBioChem',
+    description: 'A simple, visual walkthrough of what Greenaid Alpha & Beta save on salt, water and fuel.',
+    path: '/',
+  })
   return (
     <div className="min-h-screen bg-lime-2 text-ink">
       {/* Simple top bar */}

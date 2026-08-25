@@ -1,3 +1,4 @@
+import { useSeo } from '../hooks/useSeo'
 import Hero from '../components/Hero'
 import ImpactDashboard from '../components/ImpactDashboard'
 import ResultsChart from '../components/ResultsChart'
@@ -16,6 +17,12 @@ import BlogTeaser from '../components/BlogTeaser'
 import MouseTrailCTA from '../components/MouseTrailCTA'
 
 export default function Home() {
+  useSeo({
+    title: 'Greenaid Alpha & Beta, Reactive Dyeing Auxiliary by AmeyBioChem',
+    description:
+      'Reactive dyeing chemicals that cut salt and soda ash use, save water and speed up jigger and jet dyeing. Made in Solapur, India by AmeyBioChem.',
+    path: '/',
+  })
   return (
     <>
       <Hero />

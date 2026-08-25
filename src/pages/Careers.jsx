@@ -1,6 +1,7 @@
 import Reveal from '../components/Reveal'
 import Eyebrow from '../components/Eyebrow'
 import fabricsGreen from '../assets/photos/fabrics-green.jpg'
+import { useSeo } from '../hooks/useSeo'
 
 const ROLES = [
   {
@@ -45,6 +46,12 @@ const ROLES = [
 ]
 
 export default function Careers() {
+  useSeo({
+    title: 'Careers at AmeyBioChem, Reactive Dyeing Technician & Sales Roles',
+    description:
+      'Join AmeyBioChem\'s field team: application technician and technical sales roles working with dyehouses across India\'s reactive dyeing belt.',
+    path: '/careers',
+  })
   return (
     <div className="bg-black text-cream min-h-screen pb-24">
       <div className="relative pt-36 pb-16 overflow-hidden border-b border-white/10">
@@ -83,7 +90,7 @@ export default function Careers() {
 
               <p className="mt-6 text-mist leading-relaxed">{role.summary}</p>
 
-              <div className="mt-7 grid sm:grid-cols-2 gap-8">
+              <div className="mt-7 grid grid-cols-1 sm:grid-cols-2 gap-8">
                 <div>
                   <span className="font-sans font-bold text-[12px] uppercase tracking-[0.16em] text-mist">What You'll Do</span>
                   <ul className="mt-3 space-y-2.5">

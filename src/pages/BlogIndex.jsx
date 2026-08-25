@@ -2,8 +2,15 @@ import { Link } from 'react-router-dom'
 import Reveal from '../components/Reveal'
 import { POSTS } from '../data/posts'
 import Eyebrow from '../components/Eyebrow'
+import { useSeo } from '../hooks/useSeo'
 
 export default function BlogIndex() {
+  useSeo({
+    title: 'The Journal: Reactive Dyeing, Salt Soda Reduction & Water Saving | Greenaid',
+    description:
+      'Long-form articles on reactive dyeing chemistry, salt and soda ash reduction, water saving and real dyehouse case studies from across India.',
+    path: '/blog',
+  })
   return (
     <div className="bg-bone text-ink min-h-screen pt-36 pb-24">
       <div className="max-w-4xl mx-auto px-6">
